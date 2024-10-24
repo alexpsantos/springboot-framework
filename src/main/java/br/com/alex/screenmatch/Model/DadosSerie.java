@@ -49,4 +49,10 @@ public class DadosSerie {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+    @Override
+    public String toString() {
+        return "Título: " + titulo + ", Total de Temporadas: " + toalTemporadas + ", Avaliação: " + avaliacao +", Data de Lançamento: " + dataLancamento;
+    }
+
 }

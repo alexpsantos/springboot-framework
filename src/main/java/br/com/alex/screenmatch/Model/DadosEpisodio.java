@@ -12,6 +12,18 @@ public class DadosEpisodio {
     private Integer totalTemporada;
     @JsonAlias("imdbRating")
     private String avaliacao;
+    @JsonAlias("Episode")
+    private Integer numeroEpisodio;
+
+
+
+    public Integer getNumeroEpisodio() {
+        return numeroEpisodio;
+    }
+
+    public void setNumeroEpisodio(Integer numeroEpisodio) {
+        this.numeroEpisodio = numeroEpisodio;
+    }
 
     public String getTitulo() {
         return titulo;
@@ -36,4 +48,10 @@ public class DadosEpisodio {
     public void setTotalTemporada(Integer totalTemporada) {
         this.totalTemporada = totalTemporada;
     }
+
+    @Override
+    public String toString() {
+        return  "{" + "Título = '" + titulo + '\'' + ", Total de Temporadas = " + totalTemporada + ", Avaliação = '" + avaliacao + '\'' + '}';
+    }
+
 }

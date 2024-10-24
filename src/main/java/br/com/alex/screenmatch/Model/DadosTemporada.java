@@ -29,4 +29,10 @@ public class DadosTemporada {
     public void setEpisodios(List<DadosEpisodio> episodios) {
         this.episodios = episodios;
     }
+
+    @Override
+    public String toString() {
+        return "Temporada {" + "Número da temporada = " + numero + ", Episódios = " + episodios + '}';
+    }
+
 }
